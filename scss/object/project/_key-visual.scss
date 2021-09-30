@@ -1,0 +1,134 @@
+//メイン最上部のハンバーガーの写真
+.key_visual {
+    //トップページ用
+    .key_visual__layer {
+        background: url("../img/mainvisual-img/mainvisual-s.png");
+        background-position: center;
+        background-size: cover;
+        height: 285px;
+        width: 100%;
+        position: relative;
+            @include iPad {
+                background: url("../img/mainvisual-img/mainvisual-m.png");
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            @include pc {
+                background: url("../img/mainvisual-img/mainvisual-pc.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+    }
+
+    .key_visual__front_page {
+        @include pc {
+            height: 530px;
+
+        }
+    }
+
+    //アーカイブページ用
+    .key_visual__layer2 {
+        background: url("../img/mainvisual-img/page-title_arcive.jpg");
+        background-position: left;
+        background-size: cover;
+        height: 285px;
+        width: 100%;
+        position: relative;
+
+        h1 {
+            font-family: Roboto;
+            top: 45%;
+            z-index: 200;
+
+                @include iPad {
+                    font-size: 3rem;
+                    top: 50%;
+                }
+        }
+
+        h2 {
+            font-family: 'M PLUS 1p', sans-serif;
+            font-size: 1.1rem;
+            color: #fff;
+            position: absolute;
+            top: 55%;
+            padding-left: 25px;
+            z-index: 200;
+
+                @include iPad {
+                    top: 50%;
+                    padding-left: 220px;
+                }
+        }
+    }
+
+    //投稿用
+    .key_visual__layer3 {
+        position: relative;
+
+        img {
+            height: 225px;
+            width: 100%;
+            background: no-repeat center;
+            background-size: cover;
+            position: relative;
+            object-fit: cover;
+            object-position: center;
+            z-index: 0;
+            overflow: hidden;
+
+            @include iPad {
+                height: 500px;
+            }
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            font-family: 'M PLUS 1p', sans-serif;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 25px;
+            z-index: 400;
+                @include iPad {
+                    padding-left: 80px;
+                }
+    
+                @include pc {
+                    padding-left: 75px;
+                    font-size: 3rem;
+                }
+        }
+    }
+
+    .black_layer {
+        background-color: #000;
+        opacity: .5;
+        position: absolute;
+        height: 285px;
+        width: 100%;
+        z-index: 100;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        font-family: 'M PLUS 1p', sans-serif;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 25px;
+            @include iPad {
+                padding-left: 80px;
+            }
+
+            @include pc {
+                padding-left: 75px;
+                font-size: 1.5rem;
+            }
+    }
+}

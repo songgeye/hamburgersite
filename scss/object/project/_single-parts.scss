@@ -1,0 +1,124 @@
+//投稿ページのパーツ
+.post {
+    font-family: 'M PLUS 1p', sans-serif;
+    padding-bottom: 20px;
+
+        @include pc {
+            padding-bottom: 40px;
+        }
+        h1 {
+            color: #000;
+            font-size: 1.8rem;
+            padding-top: 10px;
+        }
+
+        p {
+            padding: 30px 10px 10px 0;
+            font-size: 1rem;
+            line-height: 1.5;
+
+                @include pc {
+                    padding: 60px 10px 30px 0;
+                }
+        }
+
+        h2 {
+            padding: 20px 0;
+            font-size: 1.5rem;
+                @include pc {
+                    padding: 30px 0;
+                }
+        }
+
+        h3 {
+            padding: 10px 0 20px 0;
+            font-size: 1.2rem;
+
+                @include pc {
+                    padding: 30px 0;
+                }
+        }
+
+        blockquote {
+                background-color: #F5F5F5;
+                padding: 30px 20px;
+                line-height: 1.5;
+
+                    @include pc {
+                        padding: 50px 60px;
+                    }
+    
+                p {
+                    font-size: 1rem;
+
+                        @include pc {
+                            padding: 30px 10px 50px 0;
+                        }
+                }
+    
+                cite {
+                        font-size: 1rem;
+                        a {
+                            color: #4A6C9B; 
+                            text-decoration: underline;
+                        }
+                }
+        }
+
+//番号付きリスト部分    
+    ol{
+        padding: 0 20px 30px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include iPad{
+            padding: 33px 0;
+        }
+        >li{
+            list-style: decimal;
+            >ol{
+                padding: 30px 20px;
+            }
+        }
+    }
+//リスト部分 
+    ul{
+        padding: 0 0 30px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        @include iPad{
+            padding: 33px 0;
+        }
+        >li{
+            >ul{
+                padding: 30px 20px;
+            }
+        }
+    }
+
+    pre{
+        padding: 33px 0;
+        width: 100%;
+        background-color: #F5F5F5;
+        padding: 50px;
+        code{
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+
+        strong {
+            font-family: 'M PLUS 1p', sans-serif;
+            font-weight: bold;
+            padding-bottom: 50px;
+        }
+
+    .wp-block-social-links {
+        .wp-social-link {
+            a {
+                padding: .40em;
+            }
+        }
+    }
+}

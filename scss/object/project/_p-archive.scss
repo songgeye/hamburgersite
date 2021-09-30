@@ -1,0 +1,109 @@
+//アーカイブページ
+#post {
+    .container {
+            padding: 20px 20px 0 20px;
+
+                @include iPad{
+                    padding: 40px 40px 0 40px;
+                    display: block;
+                }
+    }
+
+    article {
+            padding-bottom: 20px;
+
+            h1 {
+                color: #000;
+                font-size: 1.8rem;
+                font-family: 'M PLUS 1p', sans-serif;
+                padding: 10px 0 15px 0;
+            }
+
+            p {
+                padding: 15px 10px 10px 0;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+    
+        .cb_box {
+            font-family: 'M PLUS 1p', sans-serif;
+            position: relative;
+            padding-bottom: 20px;
+            @include iPad {
+                display: flex;
+            }
+
+
+                img {
+                    background-position: center;
+                    background-size: cover;
+                    height: 230px;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+
+                        @include iPad {
+                            height: auto;
+                            width: 50%;
+                        }
+                      
+                }
+
+            .box_ttl {
+                background-color: #3C2B1C;
+                color: #fff;
+                padding: 35px 15px 40px 15px;
+
+                    @include iPad {
+                        padding: 35px;
+                        width: 50%;
+                    }
+
+                    @include pc {
+                        padding: 40px;
+                    }
+
+                dl {
+                    @include pc {
+                        font-size: 1.8rem;
+                        font-weight: 500;
+                    }
+                }
+
+                dt {
+                    padding-top: 25px;
+                    font-size: 1.2rem;
+
+                        @include iPad {
+                            font-size: 1rem;
+                        }
+
+                        @include pc {
+                            padding-top: 40px;
+                            font-size: 1.5rem;
+                        }
+                }
+
+                dd {
+                    font-size: 1rem;
+                    font-family: 'M PLUS 1p', sans-serif;
+                    font-weight: 200;
+                    line-height: 1.5;
+                    padding: 10px 30px 40px 0;
+
+                    opacity: .7;
+
+                        @include iPad {
+                            font-weight: 300;
+                            line-height: 1.2;
+                            padding: 0 28px 20px 0;
+                        }
+
+                        @include pc {
+                            padding: 0 28px 40px 0;
+                        }
+                }
+            }
+        }
+    }
+}
