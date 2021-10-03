@@ -1,0 +1,11 @@
+//カスタムメニュー用（非使用）
+.p-menu-card{
+    &__info{ //価格とアレルギーの親要素
+        width: 100%;
+        padding: 30px 20px;
+        >p{ //価格とアレルギーの文字
+            font-size: 20px;
+            padding: 10px 0;
+        }
+    }
+}
