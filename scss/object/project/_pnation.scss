@@ -30,10 +30,6 @@
                 vertical-align: top;
             }
 
-            @include pc {
-                vertical-align: middle;
-            }
-
             .prev {
                 @include iPad {
                     display: none;
@@ -50,10 +46,6 @@
             @include iPad {
                 font-size: 30px;
                 vertical-align: top;
-            }
-
-            @include pc {
-                vertical-align: middle;
             }
 
             .next {
