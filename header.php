@@ -29,7 +29,8 @@
         </style>
     <?php endif; ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
     <div class="flex_contents">
 
         <div class="flex_left">
