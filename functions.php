@@ -1,8 +1,9 @@
 <?php
     //テーマサポート
-    add_theme_support( 'menus' );
+    register_nav_menus();
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'automatic-feed-links' );
 
     //タイトル出力
     function Hamburger_title( $title ) {
@@ -38,3 +39,37 @@
             'sidebar' => 'サイドバー',
             'footer' => 'フッター'
     ]);
+
+    //カスタム投稿（非使用）
+    function create_post_type() {
+        register_post_type( 'item', [ // 投稿タイプ名
+            'labels' => [
+                'name'          => '商品', // 管理画面右側バーの表示名
+                'singular_name' => 'item',    // カスタム投稿の識別名
+            ],
+            'public'        => true,  // 投稿タイプをpublicにする
+            'has_archive'   => true, // アーカイブ機能をつける
+            'menu_position' => 5,     // 管理画面右バーの配置場所
+            'menu_icon'     => 'dashicons-store', //管理画面右バーにつくアイコン設定
+            'taxonomies'    => [
+                'item_cat' //itemの部分は上の投稿タイプ名と同じにする
+            ],
+            'hierarchical'  => true,
+            'supports'      => [
+                'title',
+                'editor',
+                'thumbnail',
+                'page-attributes'
+            ]
+            ]);
+
+        register_taxonomy( 'item_cat', 'item', [
+            'labels' => [
+                'name'          => '商品カテゴリー',
+                'edit_item'     =>'商品カテゴリーを編集',
+            ],
+            'public' => true, 
+            'hierarchical' => true, 
+            ]);
+        }
+    add_action( 'init', 'create_post_type' );
