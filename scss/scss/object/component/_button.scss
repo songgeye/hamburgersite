@@ -1,0 +1,83 @@
+//Menuボタン
+#button__Open {
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    background-color: #FFF7EF;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Roboto;
+    color: #707070;
+    z-index: 200;
+    cursor: pointer;
+      @include iPad {
+        font-size: 1.8rem;
+      }
+
+      @include pc {
+        position: relative;
+        z-index: 400;
+        right: -40px;
+        top: 50px;
+        background-color:  #F2EDE9;
+      }
+
+  }
+
+  //アーカイブページの詳細ボタン
+  .button_wrapper {
+    align-items: center;
+    text-align:center;
+
+        .details_Btn {
+            border-radius: 35px;
+            a {
+                display: block;
+                padding: 10px 40px;
+                border-radius: 35px;
+                font-size: 1.05rem;
+                font-weight: 300;
+
+                    @include iPad {
+                        padding: 8px 35px;
+                        font-size: 0.8rem;
+                    }
+
+                    @include pc {
+                        padding: 15px 60px;
+                    }
+
+                    &:hover {
+                        background: #eee;
+                        color: #fff;
+                    }
+            }
+        }
+}
+
+//投稿ページの大きいボタン
+.wp-block-buttons {
+    text-align: center;
+        @include iPad {
+            text-align: left;
+        }
+        .wp-block-button {
+                a {
+                    display: block;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: #707070;
+                    background: rgb(255,247,239);
+                    background: linear-gradient(0deg, rgba(255,247,239,1) 0%, rgba(221,216,213,1) 100%);
+                    border: solid 1px #707070;
+                    border-radius: 20px;
+                    padding: 28px 142px;
+
+                        @include iPad {
+                            padding: 40px 190px;
+                        }
+                }
+                
+        }
+}
