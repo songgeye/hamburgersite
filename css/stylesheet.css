@@ -612,6 +612,7 @@ section {
 
 #post article {
   padding-bottom: 20px;
+  width: 100%;
 }
 
 #post article h1 {
@@ -972,6 +973,16 @@ section {
   }
 }
 
+.p-menu-card__info {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.p-menu-card__info > p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
 #single_page .container {
   display: block;
   padding: 20px 20px 0 20px;
@@ -1027,12 +1038,6 @@ section {
   }
 }
 
-@media (min-width: 1025px) {
-  .wp-pagenavi .previouspostslink {
-    vertical-align: middle;
-  }
-}
-
 @media (min-width: 600px) {
   .wp-pagenavi .previouspostslink .prev {
     display: none;
@@ -1050,12 +1055,6 @@ section {
   .wp-pagenavi .nextpostslink {
     font-size: 30px;
     vertical-align: top;
-  }
-}
-
-@media (min-width: 1025px) {
-  .wp-pagenavi .nextpostslink {
-    vertical-align: middle;
   }
 }
 
