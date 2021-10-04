@@ -14,7 +14,7 @@
         <?php endforeach; ?>
     </div>
     <p>
-        <small>Copyright: <?php bloginfo( 'name' ) ?></small>
+        <small>Copyright : &copy; <?php bloginfo( 'name' ) ?> LLC. 2021</small>
     </p>
 </footer>
 
