@@ -136,7 +136,6 @@ header {
   line-height: 130px;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: Roboto;
   text-align: center;
   top: 15px;
   position: relative;
@@ -272,28 +271,28 @@ section {
 .sub_menu:nth-of-type(n+2):nth-of-type(-n+8) a {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 20px;
   margin: 20px;
 }
 
 .sub_menu:nth-of-type(n+10):nth-of-type(-n+13) a {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 20px;
   margin: 20px;
 }
 
 .sub_menu:nth-of-type(n+15):nth-of-type(-n+20) a {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 20px;
   margin: 20px;
 }
 
 .menu_second li a {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 15px;
+  padding-left: 20px;
   margin: 20px;
 }
 
@@ -305,7 +304,6 @@ section {
   border: none;
   font-size: 1.3rem;
   font-weight: bold;
-  font-family: Roboto;
   color: #707070;
   z-index: 200;
   cursor: pointer;
@@ -517,7 +515,7 @@ section {
 @media (min-width: 600px) {
   .key_visual .key_visual__layer2 h2 {
     top: 50%;
-    padding-left: 220px;
+    padding-left: 235px;
   }
 }
 
@@ -551,7 +549,7 @@ section {
   top: 50%;
   transform: translateY(-50%);
   padding-left: 25px;
-  z-index: 200;
+  z-index: 400;
 }
 
 @media (min-width: 600px) {
@@ -971,16 +969,6 @@ section {
   #map .google_map iframe {
     height: 475px;
   }
-}
-
-.p-menu-card__info {
-  width: 100%;
-  padding: 30px 20px;
-}
-
-.p-menu-card__info > p {
-  font-size: 20px;
-  padding: 10px 0;
 }
 
 #single_page .container {
